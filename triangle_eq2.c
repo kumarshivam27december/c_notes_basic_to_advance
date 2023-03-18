@@ -21,24 +21,19 @@ void main()
 	scanf("%d",&n);
 	for(r = 1; r <= n; r++)//line control or Row control
 	{
-		// Pattern 2 
-		//First print space in the same row or line 
-		for(space = n; space>=r; space--) //Space Control 
+		
+		for(space = n; space>=r; space--)  
 		{
 			printf(" ");  // Space Control  
 		}	
 		
-		// Pattern 1 
-		// Than print the value in the same row
+		
 		for(c = 1; c<=2*r-1; c++) //value control loop 
 		{
-//			if(c%2==0)
-//			 printf("0");  // Value 
-//			else
-//			 printf("1");
+
               printf("$");
 		}	
-		printf("\n");   // New Line
+		printf("\n");  
 	}
 	
 }
